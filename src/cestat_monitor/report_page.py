@@ -27,9 +27,9 @@ def assemble_html_report(
 <title>CESTAT Keyword Monitor · {html.escape(payload["start_date"])} to {html.escape(payload["end_date"])}</title>
 <style>
 :root {{
-  --bg: #e8eef3; --surface: #fff; --ink: #152231; --muted: #5a6b7a;
-  --brand: #0f2d44; --brand-soft: #c5dce8; --line: #d2dde6;
-  --ok: #0f6d4f; --ok-bg: #e6f4ec; --match: #0a5f85; --match-bg: #e3f2fa;
+  --bg: #F7F2F7; --surface: #fff; --ink: #152231; --muted: #5a6b7a;
+  --brand: #92278F; --brand-soft: #F1DCEF; --line: #E5D8E5;
+  --ok: #0f6d4f; --ok-bg: #e6f4ec; --match: #92278F; --match-bg: #F7EAF6;
   --fail: #b45309; --fail-bg: #fff4e5; --shadow: 0 12px 40px rgba(15,35,55,.09);
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg);
 }}
