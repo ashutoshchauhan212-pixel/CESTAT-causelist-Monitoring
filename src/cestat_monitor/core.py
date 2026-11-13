@@ -833,3 +833,6 @@ def run(start: date, keywords: list[str], exclusions: list[str], bench_limit: in
         time.sleep(REQUEST_PAUSE_SECONDS)
     results.sort(key=lambda item: (parse_report_date(item.requested_date), item.bench.name.casefold()))
     payload = {"generated_at": now_ist().isoformat(timespec="seconds"), "start_date": start.strftime(DATE_FORMAT), "end_date": (start + timedelta(days=days - 1)).strftime(DATE_FORMAT), "days": days, "keywords": keywords, "excluded_phrases": exclusions, "benches": [asdict(bench) for bench in benches], "results": [asdict(result) for result in results]}
+    generate_report(payload, output_dir)
+
+    return payload
