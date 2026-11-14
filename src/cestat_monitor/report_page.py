@@ -44,7 +44,7 @@ body {{ margin: 0; min-width: 0 }}
 .hero-top {{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: .75rem }}
 .hero h1 {{ margin: 0 0 .35rem; font-size: clamp(1.35rem, 2.5vw, 1.75rem); line-height: 1.2 }}
 .hero .sub {{ margin: 0; color: var(--brand-soft); font-size: .95rem; line-height: 1.5 }}
-.hero .tz {{ opacity: .85; font-size: .82rem; margin-top: .25rem }}
+.hero .tz {{ opacity: .85; font-size: .82rem; margin-top: .25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }}
 .hero-nav {{ display: flex; gap: .5rem; flex-wrap: wrap }}
 .hero-link {{
   display: inline-flex; align-items: center; gap: .35rem; padding: .45rem .8rem;
@@ -296,7 +296,7 @@ mark.kw-hit {{
       <div>
         <h1>CESTAT Causelist Keyword Monitor</h1>
         <p class="sub">Window: <strong>{html.escape(payload["start_date"])}</strong> to <strong>{html.escape(payload["end_date"])}</strong> · Generated {html.escape(generated_at_ist)}</p>
-        <p class="tz">All dates and timestamps are in India Standard Time (IST).</p>
+        <p class="tz">All dates and timestamps are in India Standard Time (IST). <span class="credit">Developed by Adv. Pranav Ashutosh</span></p>
       </div>
       <nav class="hero-nav" aria-label="Quick jump">
         <a class="hero-link" href="#matches-section">Matched Cases ({stats["matched_pdfs"]})</a>
