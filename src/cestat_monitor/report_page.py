@@ -294,7 +294,7 @@ mark.kw-hit {{
   <header class="hero">
     <div class="hero-top">
       <div>
-        <h1>CESTAT Causelist Keyword Monitor</h1>
+        <h1>CESTAT Causelist Monitor</h1>
         <p class="sub">Window: <strong>{html.escape(payload["start_date"])}</strong> to <strong>{html.escape(payload["end_date"])}</strong> · Generated {html.escape(generated_at_ist)}</p>
         <p class="tz">All dates and timestamps are in India Standard Time (IST). <span class="credit">Developed by Adv. Pranav Ashutosh</span></p>
       </div>
