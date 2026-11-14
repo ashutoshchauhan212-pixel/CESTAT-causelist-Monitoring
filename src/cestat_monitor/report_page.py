@@ -301,7 +301,6 @@ mark.kw-hit {{
       <nav class="hero-nav" aria-label="Quick jump">
         <a class="hero-link" href="#matches-section">Matched Cases ({stats["matched_pdfs"]})</a>
         <a class="hero-link" href="#schedule-section">All Searches ({len(payload["results"])})</a>
-        <a class="hero-link" href="results.json" target="_blank" rel="noopener noreferrer">JSON Data ↗</a>
       </nav>
     </div>
     <div class="stats">
