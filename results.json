@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T03:41:08+05:30",
+  "generated_at": "2026-11-14T16:34:02+05:30",
   "start_date": "14-11-2026",
   "end_date": "20-11-2026",
   "days": 7,
@@ -1720,9 +1720,55 @@
         "value": "124438",
         "name": "AHMEDABAD"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "Request failed after 4 attempts: HTTPSConnectionPool(host='cestat.gov.in', port=443): Max retries exceeded with url: /viewcauselist (Caused by ConnectTimeoutError(<HTTPSConnection(host='cestat.gov.in', port=443) at 0x79a8654ea030>, 'Connection to cestat.gov.in timed out. (connect timeout=20)'))"
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "19-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112611",
+          "url": "https://cestat.gov.in/openfilec/124438/112611",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 17:07:11",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112627",
+          "url": "https://cestat.gov.in/openfilec/124438/112627",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 17:36:07",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "AHMEDABAD",
+          "bench_id": "124438",
+          "pdf_id": "112632",
+          "url": "https://cestat.gov.in/openfilec/124438/112632",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 17:41:48",
+          "bench_type": "SINGLE MEMBER (SM)",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "19-11-2026",
@@ -1812,9 +1858,40 @@
         "value": "104044",
         "name": "CHANDIGARH"
       },
-      "status": "failed",
-      "pdfs": [],
-      "error": "Request failed after 4 attempts: HTTPSConnectionPool(host='cestat.gov.in', port=443): Max retries exceeded with url: /viewcauselist (Caused by ConnectTimeoutError(<HTTPSConnection(host='cestat.gov.in', port=443) at 0x79a8651b5460>, 'Connection to cestat.gov.in timed out. (connect timeout=20)'))"
+      "status": "success_with_links",
+      "pdfs": [
+        {
+          "date": "19-11-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "112557",
+          "url": "https://cestat.gov.in/openfilec/104044/112557",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:47:54",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "19-11-2026",
+          "bench": "CHANDIGARH",
+          "bench_id": "104044",
+          "pdf_id": "112565",
+          "url": "https://cestat.gov.in/openfilec/104044/112565",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-12 15:52:03",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 2,
+          "text_status": "text_extracted",
+          "matches": []
+        }
+      ],
+      "error": ""
     },
     {
       "requested_date": "19-11-2026",
