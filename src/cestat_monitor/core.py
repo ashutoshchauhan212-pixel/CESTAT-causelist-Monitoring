@@ -548,11 +548,11 @@ def _collect_report_stats(payload: dict[str, Any]) -> dict[str, int]:
             if pdf.get("status") == "failed":
                 stats["failed_pdfs"] += 1
             if pdf.get("error") or pdf.get("text_status") not in (
-    "text_extracted",
-    "ocr_extracted",
-    "text_and_ocr_extracted",
-):
-    stats["warning_count"] += 1
+                "text_extracted",
+                "ocr_extracted",
+                "text_and_ocr_extracted",
+            ):
+                stats["warning_count"] += 1
     stats["benches_with_matches"] = len(matched_benches)
     return stats
 
