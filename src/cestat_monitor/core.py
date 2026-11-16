@@ -547,11 +547,14 @@ def _collect_report_stats(payload: dict[str, Any]) -> dict[str, int]:
                 matched_benches.add(result["bench"]["name"])
             if pdf.get("status") == "failed":
                 stats["failed_pdfs"] += 1
-            if pdf.get("error") or pdf.get("text_status") != "text_extracted":
-                stats["warning_count"] += 1
+            if pdf.get("error") or pdf.get("text_status") not in (
+    "text_extracted",
+    "ocr_extracted",
+    "text_and_ocr_extracted",
+):
+    stats["warning_count"] += 1
     stats["benches_with_matches"] = len(matched_benches)
     return stats
-
 
 def _render_filter_chips(payload: dict[str, Any]) -> str:
     kw_counts: dict[str, int] = {}
