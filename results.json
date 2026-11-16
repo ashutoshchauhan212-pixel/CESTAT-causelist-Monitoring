@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:51:28+05:30",
+  "generated_at": "2026-11-16T17:41:12+05:30",
   "start_date": "16-11-2026",
   "end_date": "22-11-2026",
   "days": 7,
@@ -15,6 +15,8 @@
     "Shree Cement",
     "DGTR",
     "Anti-dumping",
+    "Antidumping",
+    "Anti dumping",
     "CVD",
     "GMR",
     "Arora Tobacco"
@@ -674,6 +676,21 @@
           "pages": 1,
           "text_status": "text_extracted",
           "matches": []
+        },
+        {
+          "date": "17-11-2026",
+          "bench": "ALLAHABAD",
+          "bench_id": "109120",
+          "pdf_id": "112704",
+          "url": "https://cestat.gov.in/openfilec/109120/112704",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-16 16:23:11",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
+          "text_status": "text_extracted",
+          "matches": []
         }
       ],
       "error": ""
@@ -907,6 +924,21 @@
           "url": "https://cestat.gov.in/openfilec/107079/112699",
           "result_type": "regular",
           "uploaded_at": "2026-11-16 15:19:46",
+          "bench_type": "CENTRAL REGISTRY",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 3,
+          "text_status": "text_extracted",
+          "matches": []
+        },
+        {
+          "date": "17-11-2026",
+          "bench": "DELHI",
+          "bench_id": "107079",
+          "pdf_id": "112711",
+          "url": "https://cestat.gov.in/openfilec/107079/112711",
+          "result_type": "regular",
+          "uploaded_at": "2026-11-16 17:16:00",
           "bench_type": "CENTRAL REGISTRY",
           "status": "checked_no_match",
           "error": "",
