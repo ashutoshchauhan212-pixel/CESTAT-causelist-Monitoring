@@ -129,6 +129,8 @@ def _friendly_label(value: str) -> str:
         "matched": "Matched",
         "failed": "Failed",
         "text_extracted": "Text OK",
+        "ocr_extracted": "OCR extracted",
+        "text_and_ocr_extracted": "Text + OCR",
         "empty_text_possible_scan": "Scan / empty",
         "not_processed": "Not processed",
         "regular": "Regular",
