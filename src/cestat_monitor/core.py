@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import io
 import json
 import logging
 import random
@@ -13,7 +14,10 @@ from typing import Any
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
+import fitz
+import pytesseract
 import requests
+from PIL import Image
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
