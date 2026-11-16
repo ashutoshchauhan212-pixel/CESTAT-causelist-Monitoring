@@ -341,29 +341,90 @@ class CestatClient:
 def extract_and_match(record: PdfRecord, keywords: list[str], exclusions: list[str], client: CestatClient) -> PdfRecord:
     try:
         session = requests.Session()
-        session.headers.update({"User-Agent": USER_AGENT, "Referer": BASE_URL, "Accept": "application/pdf,text/html;q=0.9,*/*;q=0.8"})
+        session.headers.update({
+            "User-Agent": USER_AGENT,
+            "Referer": BASE_URL,
+            "Accept": "application/pdf,text/html;q=0.9,*/*;q=0.8"
+        })
         response = client._request(session, "GET", record.url)
         content = response.content
+
         if not content.startswith(b"%PDF-"):
             raise MonitorError("CESTAT returned non-PDF content")
-        reader = PdfReader(__import__("io").BytesIO(content))
+
+        reader = PdfReader(io.BytesIO(content))
         record.pages = len(reader.pages)
+
         raw_matches: list[dict[str, Any]] = []
-        for page_number, page in enumerate(reader.pages, 1):
-            text = page.extract_text() or ""
-            if text.strip():
-                record.text_status = "text_extracted"
-            raw_matches.extend(match_text(text, keywords, exclusions, page_number))
-        record.matches = _consolidate_pdf_matches(raw_matches)
-        if record.text_status == "not_processed":
+        normal_text_found = False
+        ocr_text_found = False
+
+        with fitz.open(stream=content, filetype="pdf") as ocr_doc:
+            for page_number, page in enumerate(reader.pages, 1):
+                text = page.extract_text() or ""
+
+                if text.strip():
+                    normal_text_found = True
+
+                else:
+                    try:
+                        pdf_page = ocr_doc.load_page(page_number - 1)
+
+                        pix = pdf_page.get_pixmap(
+                            matrix=fitz.Matrix(3, 3),
+                            alpha=False
+                        )
+
+                        image = Image.open(
+                            io.BytesIO(pix.tobytes("png"))
+                        )
+
+                        text = pytesseract.image_to_string(
+                            image,
+                            lang="eng",
+                            config="--psm 6",
+                            timeout=60
+                        )
+
+                        if text.strip():
+                            ocr_text_found = True
+                            logging.info(
+                                "OCR successfully extracted PDF %s page %d",
+                                record.pdf_id,
+                                page_number
+                            )
+
+                    except Exception as ocr_exc:
+                        logging.warning(
+                            "OCR failed for PDF %s page %d: %s",
+                            record.pdf_id,
+                            page_number,
+                            ocr_exc
+                        )
+                        text = ""
+
+                raw_matches.extend(
+                    match_text(text, keywords, exclusions, page_number)
+                )
+
+        if normal_text_found and ocr_text_found:
+            record.text_status = "text_and_ocr_extracted"
+        elif ocr_text_found:
+            record.text_status = "ocr_extracted"
+        elif normal_text_found:
+            record.text_status = "text_extracted"
+        else:
             record.text_status = "empty_text_possible_scan"
+
+        record.matches = _consolidate_pdf_matches(raw_matches)
         record.status = "matched" if record.matches else "checked_no_match"
+
     except Exception as exc:
         record.status = "failed"
         record.error = str(exc)
         logging.error("PDF %s failed: %s", record.pdf_id, record.error)
-    return record
 
+    return record
 
 def is_transient_error(message: str) -> bool:
     error = normalize(message)
