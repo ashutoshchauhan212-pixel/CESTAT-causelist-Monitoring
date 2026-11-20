@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:28:33+05:30",
+  "generated_at": "2026-11-20T10:21:45+05:30",
   "start_date": "20-11-2026",
   "end_date": "26-11-2026",
   "days": 7,
@@ -27,7 +27,10 @@
     "CC ACC",
     "CUSTOMS ACC",
     "AIR CARGO COMPLEX",
-    "accounts"
+    "accounts",
+    "ACC & EXPORT",
+    "ACC EXPORT",
+    "ACC MUMBAI"
   ],
   "benches": [
     {
@@ -713,42 +716,11 @@
           "result_type": "regular",
           "uploaded_at": "2026-11-19 17:00:56",
           "bench_type": "CUSTOM (DB)",
-          "status": "matched",
+          "status": "checked_no_match",
           "error": "",
           "pages": 1,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "15 SUNSHINE ENTERPRISES CC (ACC & EXPORT) MUMBAI Anil Balani/DR 6 C/87622/2015 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/8762"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "7622/2015 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "R 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/855"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "R 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSH"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": " 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR Prepared by - "
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "ani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR Prepared by - LDC Verified by - CM Dy/Asst. Registrar (Appeal Bench)"
-            }
-          ]
+          "matches": []
         },
         {
           "date": "20-11-2026",
@@ -759,42 +731,11 @@
           "result_type": "supplementary",
           "uploaded_at": "2026-11-19 17:02:47",
           "bench_type": "CUSTOM (DB)",
-          "status": "matched",
+          "status": "checked_no_match",
           "error": "",
           "pages": 1,
           "text_status": "text_extracted",
-          "matches": [
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "15 SUNSHINE ENTERPRISES CC (ACC & EXPORT) MUMBAI Anil Balani/DR 6 C/87622/2015 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/8762"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "7622/2015 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "R 7 C/87623/2015 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/855"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "R 8 C/87624/2015 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSH"
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": " 9 C/85560/2016 MANEESH PHARMACEUTICALS LTD ACC MUMBAI Anil Balani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR Prepared by - "
-            },
-            {
-              "keyword": "Acc",
-              "page": 1,
-              "snippet": "ani/DR 10 C/85561/2016 MANEESH SAPTE ACC MUMBAI Anil Balani/DR 11 C/85608/2016 SUNSHINE ENTERPRISES ACC MUMBAI Anil Balani/DR Prepared by - LDC Verified by - CM Dy/Asst. Registrar (Appeal Bench)"
-            }
-          ]
+          "matches": []
         }
       ],
       "error": ""
