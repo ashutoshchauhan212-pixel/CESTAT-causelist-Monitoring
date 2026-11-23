@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:03:30+05:30",
+  "generated_at": "2026-11-23T19:13:14+05:30",
   "start_date": "23-11-2026",
   "end_date": "29-11-2026",
   "days": 7,
@@ -2123,6 +2123,21 @@
           "status": "checked_no_match",
           "error": "",
           "pages": 2,
+          "text_status": "ocr_extracted",
+          "matches": []
+        },
+        {
+          "date": "27-11-2026",
+          "bench": "KOLKATA",
+          "bench_id": "119315",
+          "pdf_id": "112978",
+          "url": "https://cestat.gov.in/openfilec/119315/112978",
+          "result_type": "supplementary",
+          "uploaded_at": "2026-11-23 18:06:52",
+          "bench_type": "DIVISION BENCH",
+          "status": "checked_no_match",
+          "error": "",
+          "pages": 1,
           "text_status": "ocr_extracted",
           "matches": []
         }
