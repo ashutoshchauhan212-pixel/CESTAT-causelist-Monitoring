@@ -1,19 +1,17 @@
 # CESTAT keyword report
 
-**Range:** 26-11-2026 to 02-12-2026
-**Generated:** 26-11-2026 18:46:40 IST
+**Range:** 27-11-2026 to 03-12-2026
+**Generated:** 27-11-2026 05:43:25 IST
 
 ## Summary
 
-- Matching PDFs: **4**
-- PDFs checked: **131**
+- Matching PDFs: **3**
+- PDFs checked: **110**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
 ## Matches
 
-- **26-11-2026 HYDERABAD** (DIVISION BENCH) · PDF [112889](https://cestat.gov.in/openfilec/136507/112889#page=1) · GMR
-  page 1: mmissioner of Central Tax, GUNTUR MM TAX LAW & IPR CONSULTANTS/DR mmtaxlaw@gmail.com 4 C/27976/2013 GMR Kamalanga Energy Ltd Commissioner of Central Tax, VISAKH
 - **30-11-2026 MUMBAI** (EXCISE (DB)) · PDF [113135](https://cestat.gov.in/openfilec/127482/113135#page=1) · Acc Ltd.
   page 1: GOA Colgate Palmolive (I) Ltd. DR/TRILEGAL mumbaicourtemail@trile gal.com E/1114/2012 4 E/1871/2012 ACC LTD. COMMISSIONER OF CENTRAL GOODS SERVICE TAX CENTRAL E
 - **01-12-2026 DELHI** (EXCISE (DB)) · PDF [113075](https://cestat.gov.in/openfilec/107079/113075#page=1) · Arora Tobacco
