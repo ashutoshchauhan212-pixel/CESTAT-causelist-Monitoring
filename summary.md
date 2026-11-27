@@ -1,12 +1,12 @@
 # CESTAT keyword report
 
-**Range:** 27-11-2026 to 03-12-2026
-**Generated:** 27-11-2026 18:44:53 IST
+**Range:** 28-11-2026 to 04-12-2026
+**Generated:** 28-11-2026 05:26:04 IST
 
 ## Summary
 
 - Matching PDFs: **3**
-- PDFs checked: **138**
+- PDFs checked: **117**
 - Failed searches: **0**
 - Failed PDFs: **0**
 
